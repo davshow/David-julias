@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DAVID ICT Projects</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <!-- Same navigation as index.html -->
+  </header>
+
+  <main>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Project 1</h3>
+       <img 
+  src="image/dav.png" 
+  alt="My Profile Photo"
+  width="200" 
+  height="200" 
+  loading="lazy"
+>
+        <button class="details-btn">View Details</button>
+        <div class="project-details">
+          <p>Built with HTML, CSS, and JavaScript</p>
+        </div>
+      </div>
+      <!-- Add more projects -->
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+  <script>
+    // Project-specific JavaScript
+    document.querySelectorAll('.details-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const details = button.nextElementSibling;
+        details.style.display = details.style.display === 'none' ? 'block' : 'none';
+      });
+    });
+  </script>
+<footer>
+    <p>&copy; 2025 david julias portfolio. All rights reserved.</p>
+  </footer>
+</body>
+</html>

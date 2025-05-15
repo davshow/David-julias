@@ -1,0 +1,106 @@
+/* Reset and Full-Page Structure */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightblue;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures body takes at least full viewport height */
+}
+
+/* Header */
+header {
+  background: #333;
+  color: white;
+  padding: 1rem;
+}
+
+/* Navigation */
+.horizontal-nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.horizontal-nav li {
+  margin-right: 20px;
+}
+
+.horizontal-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main Content (Expands to fill remaining space) */
+main {
+  flex: 1; /* Takes all available space between header and footer */
+  padding: 2rem;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto; /* Pushes footer to bottom */
+}
+
+/* Layouts */
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.three-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  min-height: 60vh; /* Ensures grid has minimum height */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .three-column {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode header,
+.dark-mode footer {
+  background-color: #1a1a1a;
+}
+
+/* Form Styles */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  min-height: 50vh; /* Ensures forms don't collapse */
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}

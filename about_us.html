@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css">
+ <style>
+    /* Internal CSS for About Me Section */
+    .about-section {
+      padding: 40px 20px;
+      font-family: Arial, sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    /* Profile Photo Styles */
+    .profile-photo {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+      border-radius: 8px;
+      border: 3px solid #2c3e50;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .profile-photo:hover {
+      transform: scale(1.03);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .two-column {
+        grid-template-columns: 1fr;
+      }
+      
+      .profile-photo {
+        margin: 0 auto; /* Centers photo on mobile */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Same navigation as index.html -->
+  </header>
+  <main>
+<section class="about-section">
+  <div class="about-content">
+    <h1>I'm david julias</h1>
+    <h2>ICT Professional & Aspiring Web Designer</h2>
+    
+    <div class="two-column">
+      <div class="about-text">
+        <p>
+          A <strong>25-year-old</strong> Tanzanian IT professional with a Bachelor's degree in 
+          <strong>business information system</strong>. 
+          Currently serving as an <strong>Assistant ICT Officer</strong>,the development of new business projects.
+        </p>
+        
+        <p>
+          My true passion lies in <strong>web design</strong>, where I combine technical precision 
+          with aesthetic vision. I specialize in:
+        </p>
+        
+        <ul class="skills-list">
+          <li>Responsive UI/UX Design</li>
+          <li>Frontend Development (HTML5, CSS3, JavaScript)</li>
+          <li>Secure Web Architecture</li>
+          <li>Cross-browser Optimization</li>
+        </ul>
+        
+        <p>
+          When I'm not troubleshooting networks, you'll find me crafting minimalist, 
+          user-centric websites that prioritize both <strong>functionality</strong> and <strong>visual impact</strong>.
+        </p>
+      </div>
+      
+      <div class="about-image">
+        <img src="images/dav.jpg"  width="200" alt="david julias" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="two-column">
+      <div>
+        <h2>my interest</h2>
+        <p>I'm a web developer passionate about HTML, CSS, and JavaScript.</p>
+      </div>
+      <div>
+        <img src="dav.jpg" alt="My Avatar" width="200">
+      </div>
+    </section>
+    <section>
+      <h3>Skills</h3>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+<footer>
+    <p>&copy; 2025 david julias. All rights reserved.</p>
+  </footer>
+</body>
+</html>
